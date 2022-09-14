@@ -14,13 +14,6 @@
       "permissions": {
         "setting": "open"
       }
-    },
-    "/meetings": {
-      "name": "/meetings",
-      "lambdaFunction": "meetingsFunction",
-      "permissions": {
-        "setting": "open"
-      }
     }
   }
 }

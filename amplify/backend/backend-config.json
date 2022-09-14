@@ -36,14 +36,6 @@
             "Name",
             "Arn"
           ]
-        },
-        {
-          "category": "function",
-          "resourceName": "meetingsFunction",
-          "attributes": [
-            "Name",
-            "Arn"
-          ]
         }
       ]
     }
