@@ -61,7 +61,7 @@ function App() {
       columnStart="1"
       columnEnd="-1"
     >
-      <Heading level={1}>Future Great Stock App</Heading>
+      <Heading level={1}>Future Great Stock App V2</Heading>
     </Card>
       <Card
       columnStart="1"
