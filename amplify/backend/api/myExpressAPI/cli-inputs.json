@@ -14,6 +14,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/newsSentiment": {
+      "name": "/newsSentiment",
+      "lambdaFunction": "newsSentimentFunction",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }
