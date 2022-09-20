@@ -9,11 +9,6 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
-    },
-    "newsSentimentFunction": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
     }
   },
   "api": {
@@ -32,14 +27,6 @@
         {
           "category": "function",
           "resourceName": "projectGoalsFunction",
-          "attributes": [
-            "Name",
-            "Arn"
-          ]
-        },
-        {
-          "category": "function",
-          "resourceName": "newsSentimentFunction",
           "attributes": [
             "Name",
             "Arn"

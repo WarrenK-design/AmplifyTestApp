@@ -20,10 +20,6 @@
         "membersFunction": {
           "deploymentBucketName": "amplify-amplifyapp-dev-150639-deployment",
           "s3Key": "amplify-builds/membersFunction-70363959504f524e336f-build.zip"
-        },
-        "newsSentimentFunction": {
-          "deploymentBucketName": "amplify-amplifyapp-dev-150639-deployment",
-          "s3Key": "amplify-builds/newsSentimentFunction-666f574a556753344b64-build.zip"
         }
       }
     }
