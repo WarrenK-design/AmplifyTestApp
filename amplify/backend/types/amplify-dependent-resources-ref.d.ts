@@ -12,7 +12,7 @@ export type AmplifyDependentResourcesAttributes = {
             "Region": "string",
             "LambdaExecutionRole": "string"
         },
-        "newsSentimentFunction": {
+        "MLFunction": {
             "Name": "string",
             "Arn": "string",
             "Region": "string",
