@@ -1,5 +1,9 @@
+### Get current directory ###
+import os 
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
 import nltk 
-nltk.data.path.append("/var/task/nltk_data")
+nltk.data.path.append(f'{dir_path}/nltk_data')
 import json
 import requests
 from bs4 import BeautifulSoup 
@@ -9,8 +13,7 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 sia = SentimentIntensityAnalyzer()
 from pprint import pprint
 import pickle 
-
-
+import pymongo
 import csv
 
 
@@ -19,9 +22,9 @@ def readWordFile(file):
         reader = csv.reader(f)
         return list(reader)[0]
 
-top100Negative = readWordFile('negativeWords.csv')
-top100Neutral = readWordFile('neutralWords.csv')
-top100Positive = readWordFile('positiveWords.csv')
+top100Negative = readWordFile(f'{dir_path}/negativeWords.csv')
+top100Neutral = readWordFile(f'{dir_path}/neutralWords.csv')
+top100Positive = readWordFile(f'{dir_path}/positiveWords.csv')
 
 def loadClassifier(file):
     classifierFile = open(file,"rb")
@@ -109,7 +112,7 @@ def handler(event, context):
         articles.append(article)
 
     # load the classifier 
-    classifier = loadClassifier('./naivebayes.pickle')
+    classifier = loadClassifier(f'{dir_path}/naivebayes.pickle')
 
     # For each of the articles need to get the features 
     for article in articles:
@@ -133,3 +136,10 @@ def handler(event, context):
     }
 
 handler("BLAH","BLAH")
+
+#def handler(event,context):
+#    import os 
+#    dir_path = os.path.dirname(os.path.realpath(__file__))
+#    cwd = os.getcwd()
+#    print(dir_path)
+#    print(cwd)
