@@ -1,8 +1,9 @@
+import nltk 
+nltk.data.path.append("/var/task/nltk_data")
 import json
 import requests
 from bs4 import BeautifulSoup 
 from statistics import mean
-import nltk 
 import csv 
 from nltk.sentiment import SentimentIntensityAnalyzer
 sia = SentimentIntensityAnalyzer()
