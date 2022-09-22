@@ -8,6 +8,9 @@ verify_ssl = true
 [packages]
 src = {editable = true, path = "./src"}
 requests = "*"
+beautifulsoup4 = "*"
+lxml = "*"
+nltk = "*"
 
 [requires]
 python_version = "3.9"
